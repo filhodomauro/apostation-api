@@ -30,7 +30,6 @@ compileTestKotlin {
 
 repositories {
 	mavenCentral()
-    jcenter()
 }
 
 
@@ -48,8 +47,7 @@ dependencies {
 
 jacocoTestReport {
     reports {
-        xml.enabled false
-        csv.enabled false
-        html.destination "${buildDir}/jacocoHtml"
+        xml.enabled true
+        html.enabled false
     }
 }
